@@ -1,8 +1,6 @@
 <?php
 
-namespace src\Spells;
-
-use KleineBeispiel\LargeClass\Positive\NebenClassen\Spell;
+namespace KleineBeispiel\LargeClass\Positive\NebenClassen;
 
 class Fireball extends Spell
 {

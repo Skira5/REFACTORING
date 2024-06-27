@@ -1,6 +1,6 @@
 <?php
 
-namespace src\Hero;
+namespace KleineBeispiel\LongMethod\Negative\NebenClassen;
 
 use KleineBeispiel\LargeClass\Negative\NebenClassen\Hero;
 use KleineBeispiel\LargeClass\Positive\NebenClassen\Fireball;

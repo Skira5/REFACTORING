@@ -1,9 +1,7 @@
 <?php
 
-namespace src\Hero;
+namespace KleineBeispiel\LongMethod\Positve\NebenClassen;
 
-use KleineBeispiel\LargeClass\Negative\NebenClassen\Hero;
-use KleineBeispiel\LargeClass\Positive\NebenClassen\Fireball;
 
 class HeroMage extends Hero
 {
@@ -16,13 +14,8 @@ class HeroMage extends Hero
 
     public function __construct(string $name)
     {
-        $spell = new Fireball();
         $this->name = $name;
-        $this->spells = [$spell];
 
     }
-
-
-
 
 }

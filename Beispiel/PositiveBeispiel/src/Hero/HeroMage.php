@@ -22,7 +22,4 @@ class HeroMage extends Hero
 
     }
 
-
-
-
 }

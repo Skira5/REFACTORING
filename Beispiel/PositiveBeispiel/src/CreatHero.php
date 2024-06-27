@@ -1,14 +1,17 @@
 <?php
 
-namespace KleineBeispiel\LongMethod;
+namespace PositiveBeispiel\src;
 
-use src\Hero\Hero;
-use src\Hero\HeroArcher;
-use src\Hero\HeroMage;
-use src\Hero\HeroWarrior;
-class SeparateMethod
+
+
+use KleineBeispiel\LongMethod\Positve\NebenClassen\Hero;
+use KleineBeispiel\LongMethod\Positve\NebenClassen\HeroArcher;
+use KleineBeispiel\LongMethod\Positve\NebenClassen\HeroMage;
+use KleineBeispiel\LongMethod\Positve\NebenClassen\HeroWarrior;
+
+class CreatHero
 {
-    public function createHero()
+    public function createHero(): Hero
     {
         echo "Willkommen \n";
 
@@ -56,25 +59,18 @@ class SeparateMethod
 
     private function assignAttributes($hero): void
     {
-        $attributes = [
-            'Strength' => 'Stärke',
-            'Wisdom' => 'Weisheit',
-            'Intelligence' => 'Intelligenz',
-            'Dexterity' => 'Geschicklichkeit',
-            'Constitution' => 'Konstitution',
-            'Charisma' => 'Charisma'
-        ];
+
         $points = 20;
 
         echo "Du hast $points Punkte zum Verteilen auf die folgenden Attribute: \n";
-        foreach ($attributes as $attribute => $name) {
-            echo "$name ";
+        foreach ($hero->attributes as $attribute => $name) {
+            echo "$attribute ";
         }
         echo "\n";
 
         while ($points > 0) {
-            foreach ($attributes as $attribute => $name) {
-                echo "Verteile Punkte auf $name (Verbleibende Punkte: $points): ";
+            foreach ($hero->attributes as $attribute => $name) {
+                echo "Verteile Punkte auf $attribute (Verbleibende Punkte: $points): ";
                 $input = trim(fgets(STDIN));
                 if (is_numeric($input) && $input <= $points && $input >= 0) {
                     $hero->setAttribute($attribute, $input);

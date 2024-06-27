@@ -1,6 +1,6 @@
 <?php
 
-namespace src\Spells;
+namespace KleineBeispiel\LargeClass\Positive\NebenClassen;
 
 Abstract class Spell
 {
@@ -8,8 +8,4 @@ Abstract class Spell
     public string $name = '';
     public int $manaCost = 0;
     public int $damage = 0;
-
-
-
-
 }

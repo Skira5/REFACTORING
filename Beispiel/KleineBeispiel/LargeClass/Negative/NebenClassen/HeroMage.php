@@ -1,8 +1,7 @@
 <?php
 
-namespace src\Hero;
+namespace KleineBeispiel\LargeClass\Negative\NebenClassen;
 
-use KleineBeispiel\LargeClass\Negative\NebenClassen\Hero;
 use KleineBeispiel\LargeClass\Positive\NebenClassen\Fireball;
 
 class HeroMage extends Hero

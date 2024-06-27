@@ -1,10 +1,11 @@
 <?php
 
-namespace KleineBeispiel\LongMethod;
+namespace KleineBeispiel\LongMethod\Negative;
 
-use src\Hero\HeroArcher;
-use src\Hero\HeroMage;
-use src\Hero\HeroWarrior;
+
+use KleineBeispiel\LongMethod\Negative\NebenClassen\HeroArcher;
+use KleineBeispiel\LongMethod\Negative\NebenClassen\HeroMage;
+use KleineBeispiel\LongMethod\Negative\NebenClassen\HeroWarrior;
 
 class LongMethod
 {

@@ -1,8 +1,8 @@
 <?php
 
-namespace src\Hero;
+namespace KleineBeispiel\LongMethod\Positve\NebenClassen;
 
-use KleineBeispiel\LargeClass\Negative\NebenClassen\Hero;
+
 
 class HeroWarrior extends Hero
 {

@@ -8,8 +8,4 @@ Abstract class Spell
     public string $name = '';
     public int $manaCost = 0;
     public int $damage = 0;
-
-
-
-
 }

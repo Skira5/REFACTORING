@@ -1,9 +1,8 @@
 <?php
 
-namespace src\Hero;
+namespace KleineBeispiel\LargeClass\Positive\NebenClassen;
 
 use KleineBeispiel\LargeClass\Negative\NebenClassen\Hero;
-use KleineBeispiel\LargeClass\Positive\NebenClassen\Fireball;
 
 class HeroMage extends Hero
 {
@@ -21,8 +20,5 @@ class HeroMage extends Hero
         $this->spells = [$spell];
 
     }
-
-
-
 
 }

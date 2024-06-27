@@ -1,6 +1,6 @@
 <?php
 
-namespace src\Hero;
+namespace KleineBeispiel\LargeClass\Positive\NebenClassen;
 
 use KleineBeispiel\LargeClass\Negative\NebenClassen\Hero;
 
