@@ -3,10 +3,10 @@
 
 Abstract class Enemy
 {
-    public string  $name = '';
-    public int $level = 0;
-    public int $hitPoints = 0;
-    public string $race = '';
+    protected string  $name = '';
+    protected int $level = 0;
+    protected int $hitPoints = 0;
+    protected string $race = '';
 
     /**
      * @throws \Exception
@@ -42,6 +42,46 @@ Abstract class Enemy
     }
 
     abstract public function calculateHitPoints($level, $base): void;
+
+    public function getName(): string
+    {
+        return $this->name;
+    }
+
+    public function setName(string $name): void
+    {
+        $this->name = $name;
+    }
+
+    public function getLevel(): int
+    {
+        return $this->level;
+    }
+
+    public function setLevel(int $level): void
+    {
+        $this->level = $level;
+    }
+
+    public function getHitPoints(): int
+    {
+        return $this->hitPoints;
+    }
+
+    public function setHitPoints(int $hitPoints): void
+    {
+        $this->hitPoints = $hitPoints;
+    }
+
+    public function getRace(): string
+    {
+        return $this->race;
+    }
+
+    public function setRace(string $race): void
+    {
+        $this->race = $race;
+    }
 
 
 
