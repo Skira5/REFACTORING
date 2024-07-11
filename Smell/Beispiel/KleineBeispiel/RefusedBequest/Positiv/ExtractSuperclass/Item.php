@@ -2,6 +2,12 @@
 
 namespace KleineBeispiel\RefusedBequest\Positiv\ExtractSuperclass;
 
+
+/**
+ *Extract Superclass: Wenn Klassen ähnliche Fields und Methoden haben, wird eine gemeinsame Oberklasse erstellt,
+ * in welche alle identischen Fields und Methoden verschoben werden.
+ * -> weniger doppelter Code
+ */
 class Item
 {
 

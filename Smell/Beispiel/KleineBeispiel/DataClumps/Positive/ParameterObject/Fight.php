@@ -7,8 +7,16 @@ use KleineBeispiel\DataClumps\Positive\N1\NebenClassen\Hero;
 class Fight
 {
 
-    public function fightMadMage(Hero $hero)
+    public function fightMadMage(Hero $hero): void
     {
+
+        /**
+        *Replace Data Value with Object: Wenn eine Klasse (oder mehrere) ein Field enthalten,
+         * welches ein eigenes Verhalten und zugehörige Daten hat, wird eine neue Klasse erstellt,
+         * welche das Field enthält.
+         * Dann speichert man das Objekt der neuen Klasse in der Originalen.
+         * -> verstärkt Nachvollziehbarkeit
+         */
         $enemy = new Enemy("Halaster Blackcloak", 1,10, 15);
 
         do {

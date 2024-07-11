@@ -11,6 +11,12 @@ use KleineBeispiel\LongMethod\Positve\ExtractMethode\NebenClassen\HeroWarrior;
 
 class SeparateMethod
 {
+
+    /**
+     * Extract Method: um eine Methode übersichtlicher zu machen und um sie “abzuspecken”,
+     * wird eine neue Methode erstellt, in welcher der “überschüssige” Code eingefügt und mit einem Call der neuen Methode ersetzt.
+     * -> lesbarerer Code, weniger doppelter Code, Fehler sind unwahrscheinlicher (isolierter unabhängige Code-Stellen)
+     */
     public function createHero(): Hero
     {
         echo "Willkommen \n";

@@ -1,6 +1,14 @@
 <?php
 
 
+/**
+ *
+ *Extract Superclass:
+ * Wenn Klassen ähnliche Fields und Methoden haben, wird eine gemeinsame Oberklasse erstellt,
+ * in welche alle identischen Fields und Methoden verschoben werden.
+ * -> weniger doppelter Code
+ */
+
 Abstract class Enemy
 {
     protected string  $name = '';
@@ -17,7 +25,13 @@ Abstract class Enemy
         $this->race = $race;
 
 
-        /**Logic wird in methoden ausgelagert dadurch wird der Switch übersichtlicher*/
+        /**Logic wird in methoden ausgelagert dadurch wird der Switch übersichtlicher
+         * Extract Method: um eine Methode übersichtlicher zu machen und um sie “abzuspecken”,
+         * wird eine neue Methode erstellt,
+         * in welcher der “überschüssige” Code eingefügt und mit einem Call der neuen Methode ersetzt.
+         * -> lesbarerer Code, weniger doppelter Code, Fehler sind unwahrscheinlicher
+         * (isolierter unabhängige Code-Stellen)
+         * */
         switch ($level) {
             case $level < 5:
                 $this->calculateHitPoints($level, 10);

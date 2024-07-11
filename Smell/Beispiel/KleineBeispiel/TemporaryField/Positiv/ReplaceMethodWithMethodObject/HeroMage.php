@@ -20,7 +20,9 @@ class HeroMage extends Hero
     }
     public function castSpell(string $spellName): bool|int
     {
-        //todo check ob das auch wirklich geht
+        /**
+
+         */
         $spellCastingService = new SpellCastingService();
        return $spellCastingService->castSpell($this, $spellName);
     }
