@@ -3,10 +3,10 @@
 
 /**
  *
- *Extract Superclass:
- * Wenn Klassen ähnliche Fields und Methoden haben, wird eine gemeinsame Oberklasse erstellt,
- * in welche alle identischen Fields und Methoden verschoben werden.
- * -> weniger doppelter Code
+ *Replace Conditional with Polymorphism: Wenn man eine Methode hat, welche eine Menge Aktionen,
+ * abhängig von Konditionen, durchführt, wird für jede Kondition eine Unterklasse erstellt mit einer geteilten Methode,
+ * in welche der korrespondierende Code bewegt wird.
+ * -> entfernt doppelten Code, bessere Wartung
  */
 
 Abstract class Enemy
