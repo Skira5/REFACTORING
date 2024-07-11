@@ -8,14 +8,18 @@ use KleineBeispiel\DataClumps\Positive\N1\NebenClassen\Hero;
 class Fight
 {
 
-    public function fightMadMage(Hero $hero)
-    {
-        $enemy = new Enemy("Halaster Blackcloak", 1,10, 15);
+    private const string NAME = "Halaster Blackcloak";
 
-        do {
+    public function fightMadMage(Hero $hero):void
+    {
+
+        $enemy = new Enemy(
+            self::NAME,
+            1,
+            10,
+            15
+        );
             $this->madMageAttack($enemy, $hero);
-            $this->madMageDefence($enemy, $hero);
-        } while ($enemy->hitPoints > 0);
     }
 
 

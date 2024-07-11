@@ -1,7 +1,7 @@
 <?php
 
 
-class EnemyTomeKings extends Enemy
+class EnemyTombKings extends Enemy
 {
 
     public function __construct(string $name, string $race, int $level)

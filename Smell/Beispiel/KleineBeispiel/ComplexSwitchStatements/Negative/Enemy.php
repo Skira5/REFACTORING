@@ -19,7 +19,7 @@ class Enemy {
         $this->race = $race;
         /**Verschachtelter und unübersichtlicher switch */
         switch ($race) {
-            case 'tomeKing':
+            case 'tombKing':
                 switch ($level) {
                     case $level < 5:
                         $this->hitPoints = 10 + ($level * 2);

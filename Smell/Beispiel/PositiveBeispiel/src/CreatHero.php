@@ -83,4 +83,13 @@ class CreatHero
 
         echo "Alle Punkte wurden verteilt!\n";
     }
+
+public function whatDoYouWantTo()
+{
+
 }
+
+
+
+}
+

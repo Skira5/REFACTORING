@@ -1,6 +1,5 @@
 <?php
 
-namespace src\Hero;
 
 Abstract class Hero
 {
@@ -31,6 +30,10 @@ Abstract class Hero
 
     }
 
+    public function fight(): int
+    {
+        return $this->strength * 3;
+    }
 
 
 }

@@ -114,6 +114,5 @@ class Game
         echo "Du Greift $enemyName an";
 
         return $enemyHitPoints -= rand(1, 10 + $hero->level);
-
     }
 }

@@ -1,8 +1,6 @@
 <?php
 
-namespace src\Hero;
 
-use KleineBeispiel\LargeClass\Negative\NebenClassen\Hero;
 
 class HeroWarrior extends Hero
 {
@@ -10,4 +8,5 @@ class HeroWarrior extends Hero
     {
         $this->name = $name;
     }
+
 }

@@ -1,8 +1,8 @@
 <?php
 
-namespace src\Hero;
 
-use KleineBeispiel\LargeClass\Negative\NebenClassen\Hero;
+
+
 
 class HeroArcher extends Hero
 {
